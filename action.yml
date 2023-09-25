@@ -1,0 +1,16 @@
+name: 'API Insights'
+description: 'Get insights into your OpenAPI Specification.'
+author: 'treblle'
+
+inputs:
+  schema:
+    description: 'Link to your local OpenAPI Specification'
+    required: true
+
+outputs:
+  link:
+    description: 'Link to your API Insights report.'
+
+runs:
+  using: node20
+  main: dist/index.js
